@@ -18,7 +18,7 @@ video-games.mp3
     font-family: 'Georgia', serif;
     background:
       linear-gradient(rgba(255,192,203,0.35), rgba(255,182,193,0.35)),
-      url("https://raw.githubusercontent.com/khai-22/love-of-my-life/main/photo.jpg");
+      url("https://github.com/Khai-22/love-of-my-life/blob/9f4732f76e575e352399a75b373a4972a8213e84/photo.jpg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ video-games.mp3
 <body>
 
 <audio id="music" loop>
-  <source src="https://raw.githubusercontent.com/khai-22/love-of-my-life/main/video-games.mp3" type="audio/mpeg">
+  <source src="https://github.com/Khai-22/love-of-my-life/blob/601f9ce5d2408b865d00fdc1cdb237c916abf3c9/video-games.mp3.mp3" type="audio/mpeg">
 </audio>
 <div class="card">
   <h1>CHEL kan dawt tuk mu ❤️</h1>
