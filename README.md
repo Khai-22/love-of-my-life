@@ -96,7 +96,7 @@ video-games.mp3
 
 <script>
   function playMusic() {
-    document.getElementById("music").play();
+    document.getElementById("song").play();
   }
 
   function createHeart() {
