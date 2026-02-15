@@ -1,0 +1,121 @@
+index.html
+photo.jpg
+video-games.mp3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For CHEL ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    background:
+      linear-gradient(rgba(255,192,203,0.35), rgba(255,182,193,0.35)),
+      url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    text-align: center;
+    background: rgba(0,0,0,0.45);
+    padding: 35px 50px;
+    border-radius: 25px;
+    color: white;
+    animation: fadeIn 3s ease forwards;
+    opacity: 0;
+  }
+
+  h1 {
+    font-size: 3em;
+    text-shadow: 0 0 15px rgba(255,105,180,0.9),
+                 0 0 30px rgba(255,20,147,0.7);
+    animation: glow 2s infinite alternate;
+  }
+
+  button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    background: #ffb6c1;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #ffd1dc;
+  }
+
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 15px rgba(255,105,180,0.9); }
+    to { text-shadow: 0 0 35px rgba(255,20,147,1); }
+  }
+
+  .heart {
+    position: absolute;
+    bottom: -20px;
+    animation: rise linear forwards;
+  }
+
+  @keyframes rise {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-110vh);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="video-games.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+  <h1>CHEL kan dawt tuk mu ❤️</h1>
+  <p>I love you — always and forever.</p>
+  <button onclick="playMusic()">▶ Play Our Song</button>
+</div>
+
+<script>
+  function playMusic() {
+    document.getElementById("music").play();
+  }
+
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 8000);
+  }
+
+  setInterval(createHeart, 400);
+</script>
+
+</body>
+</html>
