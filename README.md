@@ -18,7 +18,7 @@ video-games.mp3
     font-family: 'Georgia', serif;
     background:
       linear-gradient(rgba(255,192,203,0.35), rgba(255,182,193,0.35)),
-      url("photo.jpg.jpg");
+      url("photo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@ video-games.mp3
 <body>
 
 <audio id="music" loop>
-  <source src="video-games.mp3.mp3" type="audio/mpeg">
+  <source src="video-games.mp3" type="audio/mpeg">
 </audio>
 <div class="card">
   <h1>CHEL kan dawt tuk mu ❤️</h1>
